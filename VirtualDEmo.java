@@ -8,7 +8,7 @@ public class VirtualDEmo {
         PartTimeEmployee p = new PartTime("BRIAN", "NAIROBI", 0740, 50, 50);
         P.mailCheck();
         P.partTimeEmployeeBonus();
-
+ ''
 
     }
     
