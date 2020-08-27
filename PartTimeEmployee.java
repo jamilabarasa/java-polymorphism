@@ -1,11 +1,11 @@
-public class PartTime {
+public class PartTimeEmployee extends Employee implements ManageWork{
     int hours;
     int hourlyRate;
 
-    public PartTime(String name,String address,int number,int hours,int hourlyRate){
+    public PartTimeEmployee(String name,String address,int number,int hours,int hourlyRate){
         super(name,address,number);
-        set hours(hours);
-        set hourlyRate(hourlyRate);
+        this.hours=hours;
+        this.hourlyRate=hourlyRate;
     
     }
 public double computepay(int hourlyRate,int hours){
@@ -19,7 +19,7 @@ public double computepay(int hourlyRate,int hours){
        return hours;
    }
    
-   public int setHours(int newHours){
+   public void setHours(int newHours){
        hours = newHours;
    }
    
@@ -27,12 +27,12 @@ public double computepay(int hourlyRate,int hours){
        return hourlyRate;
    }
    
-   public int setHourlyRate(int newHourlyRate){
+   public void setHourlyRate(int newHourlyRate){
        hourlyRate = newHourlyRate;
    }
 
 public void mailCheck(){
-    System.out.println("mailing a check to " + this.number + " " + "of" +
+    System.out.println("mailing a check to " + getNumber()+ " " + "of" +
     hours + "hours " + "and " + hourlyRate);
 }
    

@@ -13,7 +13,7 @@ public String getName(){
      return name;
  }
 
-public String setName(String newName){
+public void setName(String newName){
      name = newName;
  }
 
@@ -21,7 +21,7 @@ public String getAdress(){
     return address;
 }
 
-public String setAddress(String newAddress){
+public void setAddress(String newAddress){
     name = newAddress;
 }
 
@@ -29,13 +29,13 @@ public int getNumber(){
     return number;
 }
 
-public int setNumber(int newNumber){
+public void setNumber(int newNumber){
     number = newNumber;
 }
 
 public void mailcheck(){
-    System.out.println("Mailing a check to" this.name + "  "
-   this.address "  " + this.number);
+    System.out.println("Mailing a check to" + this.name + 
+   this.address  + this.number);
 }
 
 

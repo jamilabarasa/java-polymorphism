@@ -1,12 +1,12 @@
 public interface ManageWork {
-    int days;
+    int days ;
     int hours;
     int hourlRate;
     int salary;
     int monthlySalary;
     
 
-    public void partTimeEmployeeBonus(int bonus)
+    public void partTimeEmployeeBonus(int bonus){
     bonus=(hours-40)*hourlRate;
  if (hours<40){
      salary = salary;
